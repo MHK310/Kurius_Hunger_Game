@@ -1,0 +1,245 @@
+#There are 4 parts to our project.
+#GUI and Question file are used to create user interface
+#Ai Bot For targeted adds
+
+#Main Code
+print("----------------------\n")
+print("FLAWLESS VICTORY😄:    375\n")
+print("Spectacular            200\n")
+print("Super:                 100\n")
+print("Meh:                    0 \n")
+print("EPIC FAILIURE😨      less than 0😨\n")
+print("----------------------\n\n")
+
+tally = 0
+# Starting scenario
+print(
+     "People need your help! \nWe need you to use the least amount of resources so that other kids like you don't starve! \n the weight of their lives are on your shoulders😨" \
+     "\n\nYou now enter a Grocery store and you need protein. You see beef(steak) and chicken on the right, should you get the beef🐄 or the chicken🐓. \nHint: which protien uses the least water to produce???\n")
+print("Choice A: Beef🐄")
+print("Choice B: Chicken🐓\n")
+Choice1 = input("???:  ")
+# Info from https://www.theguardian.com/news/datablog/2013/jan/10/how-much-water-food-production-waste
+if Choice1 == "a" or Choice1 == "A":
+     print("Incorrect!😨\n Beef🐄 requires 15,000 L per kilogram of water while chicken 🐓 requires 4,300 L of water per kilogram \n50 point deduction, Beef uses wayy too many resources!😨\n\n")
+     tally -= 50
+if Choice1 == "b" or Choice1 == "B":
+     print("Correct!😄\nBeef🐄 requires 15,000 L of water while chicken 🐓 requires 4,300 L of water. \nYou gained 10 points!\😄, but meat in general uses lots of resources😨!\n\n")
+     # Keeps track of score
+     tally += 25
+# Q2
+print("You enter the vegetable aisle and you see potato 🥔 and cabbage 🥗")
+print("Which one uses the least water to produce?")
+print("Choice A: Cabbage🥗")
+print("Choice B: Potato🥔")
+Choice2 = input("Pick the best option: ")
+if Choice2 == "a" or Choice2 == "A":
+     print(
+           "Incorrect!😨 \nPotatoes 🥔 require 287 L of water per Kg while cabbage 🥗 requires 237L. Keep in mind potatoes🥔 have 87 calories per 100 grams, while cabbage🥗 only has 23, so there's actually vastly more water used for the provided energy.\n "
+           "No point deduction! Plant based options tend to be great choices.\n\n")
+if Choice2 == "b" or Choice2 == "B":
+     print(
+           "Correct!😄 \nPotatoes 🥔 require 287 L of water per Kg while cabbage 🥗 requires 237L. Keep in mind potatoes🥔 have 87 calories per 100 grams, while cabbage🥗 only has 23, so there's actually vastly more water used for the provided energy.\n You gained 50 points!\😄\n\n")
+     tally += 50
+
+# Q3
+print("You enter the fruit aisle and you see Blueberries 🍇 and Kiwis🥝")
+print("Which one is more abundant in Canada?")
+print("Choice A: Kiwis🥝")
+print("Choice B: Blueberries 🍇")
+Choice3 = input("Pick the best option: ")
+if Choice3 == "a" or Choice3 == "A":
+     print(
+           "Incorrect!😨 \n Kiwis🥝 are very rare compared to the most readily available fruit in Canada, Blueberries🍇   \n You have still gained 10 points because Plant Based options are great😄!\n\n")
+     tally += 10
+if Choice3 == "b" or Choice3 == "B":
+     print(
+           "Correct!😄 \nKiwis🥝 are very rare compared to the most readily available fruit in Canada, Blueberries🍇 \nYou gained 50 points!\😄\n\n")
+     tally += 50
+
+# Q4 Cheese and Eggs
+print("Now you've entered the meat alternatives aisle and you see Cheese and Eggs.")
+print("Choice A: Cheese")
+print("Choice B: Eggs")
+Choice4 = input("Which one has less carbon footprint on the atmosphere?: ")
+if Choice4 == "a" or Choice4 == "A":
+     print(
+           "Incorrect! Cheese produces 21 Kg of Co2 per Kg while Eggs produce 4.5 Kg of Co2 per Kg! 25 point reduction!\n\n ")
+     tally -= 25
+if Choice4 == "b" or Choice4 == "B":
+     print(
+           "Correct! Cheese produces 21 Kg of Co2 per Kg while Eggs produce 4.5 Kg of Co2 per Kg! 50  points earned!\n\n")
+     tally += 50
+
+# Q5 Chocolate and Cane Sugar
+print("Now you've entered the snack aisle and see chocolate and cane sugar.")
+print("Choice A: Chocolate")
+print("Choice B: Cane Sugar")
+Choice5 = input("Which one has less carbon footprint on the atmosphere?: ")
+if Choice5 == "a" or Choice5 == "A":
+     print(
+           "Incorrect! Chocolate produces 19 Kg of Co2 per Kg while Cane Sugar produce 3 Kg of Co2 per Kg! 25 point reduction!\n\n ")
+     tally -= 25
+if Choice5 == "b" or Choice5 == "B":
+     print(
+           "Correct!  Chocolate produces 19 Kg of Co2 per Kg while Cane Sugar produce 3 Kg of Co2 per Kg! 50  points earned!\n\n")
+     tally += 50
+
+# Q6 Oatmeal and Rice
+print("Now you've entered the meat alternatives aisle and you see Oatmeal and Rice🍚")
+print("Choice A: Oatmeal")
+print("Choice B: Rice🍚")
+Choice6 = input("Which one has less carbon footprint on the atmosphere?: ")
+if Choice6 == "a" or Choice6 == "A":
+     print("Correct! Both Oat Meal and Rice are Excellent choices for environmentally conscious food products.\n\n")
+     tally -= 25
+if Choice6 == "b" or Choice6 == "B":
+     tally += 50
+     print("Correct!Both Oat Meal and Rice are Excellent choices for environmentally conscious food products.\n\n")
+
+# Q7 Hadi
+print("You enter the dairy Isle and see Almond milk and Dairy Milk. ")
+print("Choice A: Almond milk")
+print("Choice B: Dairy milk")
+Choice7 = input("Which uses less water per gallon?: ")
+if Choice7 == "a" or Choice7 == "A":
+     print("Correct! Almond Milk is by far the better option. \nYou Gained 50 points\n\n")
+     tally += 50
+if Choice7 == "b" or Choice7 == "B":
+     print("Incorrect! Almond Milk is by far the better option.\ 25 Point reduction!\n\n")
+     tally -= 25
+
+# Q8
+print("Which one of the following products produce the most calories per crop yield?")
+print("Choice A: Grain Corn")
+print("Choice B: Cabbage")
+Choice8 = input()
+if Choice8 == "A" or Choice8 == "a":
+     print(
+           "Correct! Grain corn produces around 29,000 calories per crop yield while Cabbage produces roughly 9,500 calories per crop yield! 50 points gained!\n\n")
+     tally += 50
+if Choice8 == "B" or Choice8 == "b":
+     print(
+           "Incorrect! Grain corn produces around 29,000 calories per crop yield while Cabbage produces roughly 9,500 calories per crop yield! 25 point deduction!\n\n")
+     tally -= 25
+print("You now have " + str(tally) + " points!!")
+print(tally)
+# flawless
+if tally == 375:
+     print("FLAWLESS VICTORY😄😄😄😄")
+if tally >= 200 and tally > 375:
+     print("SPECTACULAR😄😄😄")
+if tally >= 100 and tally > 200:
+     print("SUPER😄")
+if tally >= 0 and tally > 100:
+     print("MEH😨")
+if tally > 0:
+     print("EPIC FAILIURE 😨😨😨😨😨")
+
+#IG name Kurius_Hunger_Game
+GUI Interface
+from tkinter import *
+from tkinter import messagebox as mb
+import json
+
+
+root = Tk()
+root.geometry("800x500")
+root.title("Quiz")
+with open('quiz.json') as f:
+   obj = json.load(f)
+q = (obj['ques'])
+options = (obj['options'])
+a = (obj['ans'])
+
+class Quiz:
+   def __init__(self):
+       self.qn = 0
+       self.ques = self.question(self.qn)
+       self.opt_selected = IntVar()
+       self.opts = self.radiobtns()
+       self.display_options(self.qn)
+       self.buttons()
+       self.correct = 0
+
+   def question(self, qn):
+       t = Label(root, text="Kurius Hunger Games", width=50, bg="blue", fg="white", font=("times", 20, "bold"))
+       t.place(x=0, y=2)
+       qn = Label(root, text=q[qn], width=60, font=("times", 16, "bold"), anchor="w")
+       qn.place(x=70, y=100)
+       return qn
+
+   def radiobtns(self):
+       val = 0
+       b = []
+       yp = 200
+       while val < 4:
+           btn = Radiobutton(root, text=" ", variable=self.opt_selected, value=val + 1, font=("times", 14))
+           b.append(btn)
+           btn.place(x=100, y=yp)
+           val += 1
+           yp += 40
+       return b
+
+   def display_options(self, qn):
+       val = 0
+       self.opt_selected.set(0)
+       self.ques['text'] = q[qn]
+       for op in options[qn]:
+           self.opts[val]['text'] = op
+           val += 1
+
+   def buttons(self):
+       nbutton = Button(root, text="Next",command=self.nextbtn, width=10,bg="green",fg="white",font=("times",16,"bold"))
+       nbutton.place(x=200,y=380)
+       quitbutton = Button(root, text="Quit", command=root.destroy,width=10,bg="red",fg="white", font=("times",16,"bold"))
+       quitbutton.place(x=380,y=380)
+
+   def checkans(self, qn):
+       if self.opt_selected.get() == a[qn]:
+           return True
+
+   def nextbtn(self):
+       if self.checkans(self.qn):
+           self.correct += 1
+       self.qn += 1
+       if self.qn == len(q):
+           self.display_result()
+       else:
+           self.display_options(self.qn)
+
+
+   def display_result(self):
+       score = int(self.correct / len(q) * 100)
+       result = "Score: " + str(score) + "%"
+       wc = len(q) - self.correct
+       correct = "No. of correct answers: " + str(self.correct)
+       wrong = "No. of wrong answers: " + str(wc)
+       mb.showinfo("Result", "\n".join([result, correct, wrong]))
+
+
+
+quiz=Quiz()
+root.mainloop()
+
+Question File (quiz.json)
+{
+ "ques" : [
+   "1.You enter a grocery store and you enter the meat section\nYou see beef\uD83D\uDC04, chicken meat\uD83D\uDC13, pork, and sheep meat\nWhich one uses the least water to produce?",
+   "2.Which one of these products have the LEAST carbon footprint on\nthe atmosphere?",
+   "3.Which one of the following foods is the most energy efficient?",
+   "4.Which one of these products yield the most calories per crop yield?",
+   "5.How much food do you think is wasted annually in Ontario?"
+ ],
+
+ "options" : [
+   ["Beef", "Chicken Meat", "Pork", "Sheep Meat"],
+   ["Chocolate", "Cheese", "Eggs", "Milk"],
+   ["Eggs", "Corn", "Cheese", "Beef"],
+   ["Potato","Cabbage","Grain Corn","Dry Beans"],
+   ["3.6 Million Tonnes", "4 Thousand Tonnes", "100 Tonnes", "500 Thousand Tonnes"]
+ ],
+
+ "ans" : [ 2, 4, 2, 3, 1]
+
+}
